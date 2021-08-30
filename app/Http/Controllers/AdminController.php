@@ -35,7 +35,7 @@ class AdminController extends Controller
                 return $authUser;
             }
           
-            $hieu = new Social([
+            $minh = new Social([
                 'provider_user_id' => $users->id,
                 'provider' => strtoupper($provider)
             ]);
@@ -53,11 +53,11 @@ class AdminController extends Controller
                     ]);
                 }
 
-            $hieu->login()->associate($orang);
+            $minh->login()->associate($orang);
                 
-            $hieu->save();
+            $minh->save();
 
-            $account_name = Login::where('admin_id',$hieu->user)->first();
+            $account_name = Login::where('admin_id',$minh->user)->first();
             Session::put('admin_name',$account_name->admin_name);
             Session::put('admin_id',$account_name->admin_id); 
           
@@ -82,7 +82,7 @@ class AdminController extends Controller
             return redirect('/dashboard')->with('message', 'Đăng nhập Admin thành công');
         }else{
 
-            $hieu = new Social([
+            $minh = new Social([
                 'provider_user_id' => $provider->getId(),
                 'provider' => 'facebook'
             ]);
@@ -98,8 +98,8 @@ class AdminController extends Controller
                     
                 ]);
             }
-            $hieu->login()->associate($orang);
-            $hieu->save();
+            $minh->login()->associate($orang);
+            $minh->save();
 
             $account_name = Login::where('admin_id',$account->user)->first();
             Session::put('admin_name',$account_name->admin_name);

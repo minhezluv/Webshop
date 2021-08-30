@@ -55,7 +55,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`admin_id`, `admin_email`, `admin_password`, `admin_name`, `admin_phone`, `created_at`, `updated_at`) VALUES
-(1, 'admin@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'hieu tan', '0932023992', NULL, NULL);
+(1, 'admin@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'minh tan', '0123456789', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -154,10 +154,10 @@ CREATE TABLE `tbl_customers` (
 --
 
 INSERT INTO `tbl_customers` (`customer_id`, `customer_name`, `customer_email`, `customer_password`, `customer_phone`, `created_at`, `updated_at`) VALUES
-(4, 'Hiếu Tấn', 'tanhieu@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0932023992', NULL, NULL),
-(5, 'Hoàng thị yến vi', 'yenvi@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0932023992', NULL, NULL),
-(6, 'Trương Ngọc Tấn Hiếu', 'hieu123@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0932023992', NULL, NULL),
-(7, 'Anh hieu dep giai 123', 'depgiai123@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0932023992', NULL, NULL);
+(4, 'Minh1', 'tanminh@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0123456789', NULL, NULL),
+(5, 'Minh2', 'minh1234@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0123456789', NULL, NULL),
+(6, 'Minh3', 'minh123@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0123456789', NULL, NULL),
+(7, 'Anh minh dep giai 123', 'depgiai123@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0123456789', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1070,7 +1070,7 @@ CREATE TABLE `tbl_shipping` (
 --
 
 INSERT INTO `tbl_shipping` (`shipping_id`, `shipping_name`, `shipping_address`, `shipping_phone`, `shipping_email`, `shipping_notes`, `shipping_method`, `created_at`, `updated_at`) VALUES
-(17, 'Hieu Tấn', '245 Nguyễn Văn Khạ, Tân An Hội .Thị trấn Củ Chi,TPHCM', '0932023992', 'Hieu dep giai', 'Nhanh nha mày', 1, NULL, NULL);
+(17, 'minh Tấn', '245 Nguyễn Văn Khạ, Tân An Hội .Thị trấn Củ Chi,TPHCM', '0123456789', 'minh dep giai', 'Nhanh nha mày', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 

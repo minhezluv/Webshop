@@ -19,21 +19,21 @@ class UsersTableSeeder extends Seeder
         $userRoles = Roles::where('name','user')->first();
 
         $admin = Admin::create([
-			'admin_name' => 'hieutan',
-			'admin_email' => 'hieutan@gmail.com',
-			'admin_phone' => '0932023991',
+			'admin_name' => 'minhnq',
+			'admin_email' => 'minhnq@gmail.com',
+			'admin_phone' => '0123456789',
 			'admin_password' => md5('123456')	
         ]);
         $author = Admin::create([
-			'admin_name' => 'hieutan123',
-			'admin_email' => 'hieutan123@gmail.com',
-			'admin_phone' => '0932023992',
+			'admin_name' => 'minhnq123',
+			'admin_email' => 'minhnq123@gmail.com',
+			'admin_phone' => '0123456789',
 			'admin_password' => md5('123456')	
         ]);
         $user = Admin::create([
-			'admin_name' => 'hieutan456',
-			'admin_email' => 'hieutan456@gmail.com',
-			'admin_phone' => '0932023993',
+			'admin_name' => 'minhnq456',
+			'admin_email' => 'minhnq456@gmail.com',
+			'admin_phone' => '0123456789',
 			'admin_password' => md5('123456')
         ]);
 
